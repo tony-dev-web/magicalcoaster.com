@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /
+Disallow: /api/
+Disallow: /none/
+Disallow: /None/
+Disallow: /?source=pwa
+
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
