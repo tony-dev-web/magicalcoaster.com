@@ -1,4 +1,4 @@
-<img src="" alt="magical coaster">
+<img src="https://github.com/tony-dev-web/magicalcoaster.com/blob/home/banniere-magical-coaster.png?raw=true" alt="magical coaster">
 <h1>Magical Coster : Reseau social pour les fans de parc d'attraction</h1>
 
 Magicalcoaster est un projet open source développé grâce à l'outil Django via le langage de programmation Python ainsi que des bdd en PostgreSQL et Cassandra pour la partie interaction visiteur.
