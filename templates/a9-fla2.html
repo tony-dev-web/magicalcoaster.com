@@ -1,0 +1,24 @@
+{% extends "a9.html" %}
+
+{% block body %}
+
+<div class="p0 min-he1 itec">
+    <div class="lg-cl5 p2 m-auto boxsh1 txc" >
+        
+    <h1 class="dspb">Proposer votre Land</h1>
+    <form method="Post" class="">
+        <input class="inpt1" type="text" name="parc" placeholder="Nom du Parc" required>
+        <input class="inpt1" type="text" name="land" placeholder="Nom du Land" required>
+        <textarea class="inpt1" name="description" placeholder="Description" rows="5" cols="33"></textarea>
+        <input class="inpt1" type="text" name="theme" placeholder="Theme">
+        <input class="inpt1" type="number" name="superficie" placeholder="Superficie en m2">
+        <input class="inpt1" type="number" name="nombre_attraction" placeholder="Nombre d'attraction">
+        <input class="inpt1" type="number" name="nombre_employer" placeholder="Nombre d'employer">
+
+        <button class="btn1" type="submit">Envoyer</button>
+    </form>
+    </div>
+
+
+</div>
+{% endblock body %}

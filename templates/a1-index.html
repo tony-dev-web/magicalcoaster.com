@@ -1,24 +1,32 @@
 {% extends "a1.html" %}
-{% block head_css %}
-{% endblock head_css %}
 {% block body %}
 
-<h1 class="dspb">Vivez la sociale magie des fans de parc</h1>
+<h1 class="dspb p1">{{ page.h1 }}</h1>
 <div class="sm-dspb lg-dspf p0">
 
    
-    <div class="sm-cl12 lg-cl4 p1">
+    <div class="sm-cl12 lg-cl3 p1">
 
-    <div class="boxsh1 p1"></div>
-    
+
+   <ul class="boxsh1 p3">
+   {% if uti.utilisateur %}<li class=""><a class="" href="{{ uti.url_frontend }}">{{ uti.utilisateur }}</a></li>{% endif %}
+   <li class=""><a class="" href="/fr/parcs/">Parcs</a></li>
+   <li class=""><a class="" href="/fr/lands/">Lands</a></li>
+   <li class=""><a class="" href="/fr/coasters/">Coasters</a></li>
+   <li class=""><a class="" href="/fr/maneges/">Attractions</a></li>
+   <li class=""><a class="" href="/fr/boutiques/">Boutiques</a></li>
+   <li class=""><a class="" href="/fr/hotels">Hotels</a></li>
+   <li class=""><a class="" href="/fr/spectacles/">Spectacles</a></li>
+   <li class=""><a class="" href="/fr/restaurants/">Restaurants</a></li>
+   <li class=""><a class="" href="/fr/fans/">Fans</a></li>
+   </ul>
     </div>
    
    
    
-    <div class="sm-cl12 lg-cl8 p1">
-
-     <div class="boxsh1 p1"></div>
-    
+    <div class="sm-cl12 lg-cl7 p1">
+        {% include "a0-socialform.html" %}
+        {% include "a0-socialpost.html" %}
     </div>
 
 

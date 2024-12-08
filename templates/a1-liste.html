@@ -1,0 +1,31 @@
+{% extends "a1.html" %}
+{% block body %}
+<h1 class="dspb p1">Liste des {{ page.page }}</h1>
+<div class="sm-dspb lg-dspf p0">
+<div class="sm-cl12 lg-cl3 p1">
+<ul class="boxsh1 p3">
+   <li><a href="/{{layout.lang}}/parcs/">Parcs</a></li>
+   <li><a href="/{{layout.lang}}/lands/">Lands</a></li>
+   <li><a href="/{{layout.lang}}/coasters/">Coasters</a></li>
+   <li><a href="/{{layout.lang}}/maneges/">Attractions</a></li>
+   <li><a href="/{{layout.lang}}/boutiques/">Boutiques</a></li>
+   <li><a href="/{{layout.lang}}/hotels">Hotels</a></li>
+   <li><a href="/{{layout.lang}}/spectacles/">Spectacles</a></li>
+   <li><a href="/{{layout.lang}}/restaurants/">Restaurants</a></li>
+   <li><a href="/{{layout.lang}}/fans/">Fans</a></li>
+</ul></div>
+{% if ui %}
+<div class="sm-cl12 lg-cl7 p1">
+{% for ui in ui %}
+     <div class="card1">
+        <p class="card1a"><a href="{{ ui.url_frontend }}">{{ ui.titre }}</a></p>
+        <p class="card1b">{{ ui.description }}</p>
+        <p class="card1e">{{ ui.vues }} vues</p>
+    </div>
+    {% empty %}<div class="card9">Aucun {{ page.page }} pour le moment</div>
+{% endfor %}</div>
+{% else %}<div class="card9">Aucun {{ page.page }} pour le moment</div>
+{% endif %}
+</div>
+
+{% endblock body %}

@@ -1,0 +1,36 @@
+{% extends "a9.html" %}
+
+{% block body %}
+
+<div class="p0 min-he1 itec">
+    <div class="lg-cl5 p2 m-auto boxsh1 txc" >
+        
+    <h1 class="dspb">Proposer votre Parc</h1>
+    <form method="Post" class="">
+        
+        <input class="inpt1" type="text" name="parc" placeholder="Nom du Parc" required>
+        <textarea class="inpt1" name="description" placeholder="Description" rows="5" cols="33"></textarea>
+
+        <input class="inpt1" type="text" name="adresse" placeholder="Adresse">
+        <input class="inpt1" type="text" name="code_postale" placeholder="Code postale">
+        <input class="inpt1" type="text" name="ville" placeholder="Ville">
+        <input class="inpt1" type="text" name="pays" placeholder="Pays">
+
+        <input class="inpt1" type="number" name="superficie" placeholder="Superficie en m2">
+        <input class="inpt1" type="number" name="nombre_attraction" placeholder="Nombre d'attraction">
+        <input class="inpt1" type="number" name="nombre_employer" placeholder="Nombre d'employer">
+
+        <input class="inpt1" type="text" name="nombre_visiteur" placeholder="Nombre de visiteur à l'année">
+        <input class="inpt1" type="text" name="site_web" placeholder="Site web" >
+
+        <input class="inpt1" type="number" name="parking" placeholder="nombre de vehicule">
+ 
+
+
+        <button class="btn1" type="submit">Envoyer</button>
+    </form>
+    </div>
+
+
+</div>
+{% endblock body %}

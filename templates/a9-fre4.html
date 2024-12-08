@@ -1,0 +1,23 @@
+{% extends "a9.html" %}
+
+{% block body %}
+
+<div class="p0 min-he1 itec">
+    <div class="lg-cl5 p2 m-auto boxsh1 txc" >
+        
+    <h1 class="dspb">Proposer du Restaurant</h1>
+    <form method="Post" class="">
+        <input class="inpt1" type="text" name="manege" placeholder="Nom du restaurant" required>
+        <textarea class="inpt1" name="description" placeholder="Description" rows="5" cols="33"></textarea>
+        <textarea class="inpt1" name="menu" placeholder="Exmple de menu" rows="5" cols="33"></textarea>
+        <input class="inpt1" type="number" name="nombre_siege" placeholder="Nombre de place">
+        <input class="inpt1" type="number" name="nombre_service" placeholder="Nombre de service par jour">
+        <input class="inpt1" type="number" name="nombre_employer" placeholder="Nombre d'employer">
+
+        <button class="btn1" type="submit">Envoyer</button>
+    </form>
+    </div>
+
+
+</div>
+{% endblock body %}

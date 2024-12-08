@@ -1,0 +1,30 @@
+{% extends "a1.html" %}
+{% block body %}
+
+
+<div class="sm-dspb p0">
+
+<div class="dspb p1 w100 m-auto tac">
+<figure><img class="" src="{{ page.photo|default:'/static/img/default.png'}}" alt="{{ page.photo_alt }}" width="150" height="150"></figure>
+<h1 class="">{{ page.utilisateur|capfirst }}</h1>
+<p>{{ page.description}}</p>
+<p class="mt5">{{ page.vues }} vues</p>
+{% if request.user.is_authenticated %}<div class="mt20 mb20"><a class="btn1" href="/fr/fut1/">Modifier</a></div>{% endif %}
+</div>
+
+  <div class="dspf p1 w100">       
+    <div class="sm-cl12 lg-cl4 p3 boxsh1 mr1">
+    <h2>Info</h2>
+        <ul>
+            {% if page.ville %}<liclass="fs14">{{ page.ville }}</li>{% endif %}
+            {% if page.pays %}<li class="fs14">{{ page.pays }}</li>{% endif %}
+            {% if page.site_web %}<li><a class="c1 fs14" href="{{ page.site_web }}" target="blank" rel="noopener, nofollow">{{ page.domaine }}</a></li>{% endif %}
+         
+        </ul>
+    </div>
+   
+    <div class="sm-cl12 lg-cl7">
+        {% include "a0-socialform.html" %}
+        {% include "a0-socialpost.html" %}
+    </div></div></div>
+{% endblock body %}

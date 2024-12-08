@@ -1,0 +1,9 @@
+{% if request.user.is_authenticated %}
+<form method="Post" enctype="multipart/form-data" class="p3">
+    <textarea class="inpt0" type="text" name="post" placeholder="Partager votre expérience magique"></textarea>
+    <input class="inpt2" type="text" name="url" placeholder="Url">
+    <input id="file" class="inptfile" type="file"  name="file" accept="image/*,image/heif,image/heic,video/*,video/mp4,video/x-m4v" />
+    <div class="dspf" ><label class="inptfile2 cl4 mr1" for="file">Image</label>
+    <button class="btn0 cl8" type="submit" aria-label="bouton connexion">Partager</button></div>
+</form>
+{% endif %}

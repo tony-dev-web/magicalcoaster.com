@@ -1,0 +1,33 @@
+{% extends "a9.html" %}
+
+{% block body %}
+<div class="p0 min-he1 itec">
+    <div class="lg-cl5 p2 m-auto boxsh1 txc" >
+        
+    <h1 class="dspb">Profil publique</h1>
+    <form method="Post" class="">
+        <div><img class="mb20" width="150" height="150" src="{{ uti.photo|default:'/static/img/default.png' }}" alt="{{ up1.photo_alt|default:'social fans parc' }}"/></div>
+        
+        <input id="file" class="inptfile" type="file"  name="photo" accept="image/*,image/heif,image/heic,video/*,video/mp4,video/x-m4v" />
+        <label class="inptfile2 mb20" for="file">Photo</label>
+        
+        <textarea class="inpt1" name="description" placeholder="Description" rows="5" cols="33">{{ uti.description|default:'' }}</textarea>
+        <input class="inpt1" type="text" name="adresse" value="{{ uti.adresse|default:'' }}" placeholder="Adresse">
+        <input class="inpt1" type="text" name="ville" value="{{ uti.ville|default:'' }}" placeholder="Ville">
+        <input class="inpt1" type="text" name="pays" value="{{ uti.pays|default:'' }}" placeholder="Pays">
+        <input class="inpt1" type="text" name="site_web" value="{{ uti.site_web|default:'' }}" placeholder="Site web">
+        <input class="inpt1" type="number" name="age" value="{{ uti.age|default:'' }}" placeholder="Age">
+        <input class="inpt1" type="text" name="parc_prefere" value="{{ uti.parc_prefere|default:'' }}" placeholder="Parc préféré">
+        <input class="inpt1" type="text" name="manege_prefere" value="{{ uti.manege_prefere|default:'' }}" placeholder="Attraction préféré">
+        <input class="inpt1" type="text" name="coaster_prefere" value="{{ uti.coaster_prefere|default:'' }}" placeholder="Coaster préféré">
+        <input class="inpt1" type="text" name="land_prefere" value="{{ uti.land_prefere|default:'' }}" placeholder="Land préféré">
+        <input class="inpt1" type="text" name="spectacle_prefere" value="{{ uti.spectacle_prefere|default:'' }}" placeholder="Spectacle préféré">
+        <input class="inpt1" type="text" name="boutique_prefere" value="{{ uti.boutique_prefere|default:'' }}" placeholder="Boutique préféré">
+        <input class="inpt1" type="text" name="hotel_prefere" value="{{ uti.hotel_prefere|default:'' }}" placeholder="Hotel préféré">
+        <input class="inpt1" type="text" name="restaurant_prefere" value="{{ uti.restaurant_prefere|default:'' }}"placeholder="Restaurant préféré">
+
+        <button class="btn1" type="submit">Envoyer</button>
+    </form>
+    </div>
+</div>
+{% endblock body %}

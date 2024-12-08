@@ -1,0 +1,15 @@
+{% for up1 in up1 %}
+    <div class="card1">
+        <div class="card1a"><a href="{{ up1.utilisateur_url }}">{{ up1.utilisateur }}</a></div>
+        {% if up1.file_url %}<div class="card1b"><img class="socfil1" src="{{ up1.file_url }}" alt="{{ up1.file_alt|default:'social fans parc' }}"/></div>{% endif %}
+        
+        {% if up1.post %}<div class="card1c">{{ up1.post }}</div>{% endif %}
+        
+        {% if up1.domaine == 'youtube.com' or up1.domaine == 'youtu.be' %}
+        <iframe class="card1y" width="560" height="315" src="https://www.youtube-nocookie.com/embed{{ up1.chemin }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        {% elif up1.url %}
+        <div class="card1d"><a class="c1" href="{{ up1.url }}" target="blank" rel="nofollow, noopener">{{ up1.url }}</a></div>{% endif %}
+        
+        {% if up1.vues != 0 %}<div class="card1e">{{ up1.vues }} vues</div>{% endif %}
+    </div>
+{% endfor %}

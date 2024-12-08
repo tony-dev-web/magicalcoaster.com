@@ -1,0 +1,38 @@
+{% extends "a9.html" %}
+
+{% block body %}
+
+<div class="p0 min-he1 itec">
+    <div class="lg-cl5 p2 m-auto boxsh1 txc" >
+        
+    <h1 class="dspb">Proposer votre Coaster</h1>
+    <form method="Post" class="">
+        <input class="inpt1" type="text" name="coaster" placeholder="Nom du Coaster" required>
+        <textarea class="inpt1" name="description" placeholder="Description" rows="5" cols="33"></textarea>
+        <input class="inpt1" type="text" name="theme" placeholder="Theme">
+        <input class="inpt1" type="number" name="hauteur" placeholder="Hauteur en m">
+        <input class="inpt1" type="number" name="superficie" placeholder="Superficie en m2">
+
+        <input class="inpt1" type="number" name="longueur" placeholder="Longueur">
+        <input class="inpt1" type="number" name="airtime" placeholder="Nombre de airtime">
+        <input class="inpt1" type="number" name="virage_droite" placeholder="Nombre de virage à droite">
+        <input class="inpt1" type="number" name="virage_gauche" placeholder="Nombre de virage à gauche">
+        <input class="inpt1" type="number" name="nombre_looping" placeholder="Nombre de looping">
+        <input class="inpt1" type="number" name="vitesse" placeholder="Vitesse">
+
+        <input class="inpt1" type="number" name="nombre_employer" placeholder="Nombre d'employer">
+        <input class="inpt1" type="number" name="nombre_wagon" placeholder="Nombre de wagon">
+        <input class="inpt1" type="number" name="nombre_siege" placeholder="Nombre de siege">
+        <input class="inpt1" type="number" name="nombre_quai" placeholder="Nombre de quai">
+        <input class="inpt1" type="number" name="debit" placeholder="Debit heure">
+        <input class="inpt1" type="text" name="constructeur" placeholder="Constructeur">
+        <input class="inpt1" type="number" name="annee" placeholder="Année de mise en service">
+        <button class="btn1" type="submit">Envoyer</button>
+    </form>
+    </div>
+  
+        fco8.vitesse = request.POST['vitesse']
+        fco8.looping = request.POST['looping']
+
+</div>
+{% endblock body %}

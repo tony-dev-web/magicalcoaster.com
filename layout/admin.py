@@ -1,3 +1,4 @@
 from django.contrib import admin
+from layout.models import LayoutModel, PageModel
 
-# Register your models here.
+admin.site.register([LayoutModel,PageModel])
