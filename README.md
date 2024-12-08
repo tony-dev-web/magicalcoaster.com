@@ -20,3 +20,7 @@ You will be able to share your YouTube videos, communicate with other fans, post
 <a href="https://magicalcoaster.com">Magical coaster</a>
 
 <h2>Contributeurs</h2>
+
+
+
+<img src="https://github.com/tony-dev-web/magicalcoaster.com/blob/home/default.png?raw=true" alt="magical coaster" width="100" height="100">
