@@ -1,4 +1,4 @@
-<img src="https://github.com/tony-dev-web/magicalcoaster.com/blob/home/banniere-magical-coaster.png?raw=true" alt="magical coaster">
+<img src="https://github.com/tony-dev-web/magicalcoaster.com/blob/home/static/banniere-magical-coaster.png" alt="magical coaster">
 <h1>Magical Coster : Reseau social pour les fans de parc d'attraction</h1>
 
 Magicalcoaster est un projet open source développé grâce à l'outil Django via le langage de programmation Python ainsi que des bdd en PostgreSQL et Cassandra pour la partie interaction visiteur.
@@ -23,4 +23,4 @@ You will be able to share your YouTube videos, communicate with other fans, post
 
 
 
-<img src="https://github.com/tony-dev-web/magicalcoaster.com/blob/home/default.png?raw=true" alt="magical coaster" width="100" height="100">
+<img src="https://github.com/tony-dev-web/magicalcoaster.com/blob/home/static/default.png" alt="magicalcoaster" width="100" height="100">
