@@ -8,7 +8,7 @@ Magical Coaster est proposé en open source via différents réseaux comme Githu
 
 Vous pourrez partager vos vidéos YouTube, communiquer avec d'autres fans, poster vos photos de parc ou partager des liens vers d'autres sites web.
 
-<h2>Social network for amusement park fans V1</h2>
+<h2>Social network for amusement park fans V1 **En</h2>
 
 Magicalcoaster is an open source project developed using the Django tool via the Python programming language as well as databases in postgresql and Cassandra for the interactive visitor part.
 This social network is aimed at coaster fans but also at everyone looking for sensations
